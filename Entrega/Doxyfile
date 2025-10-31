@@ -1,0 +1,76 @@
+# Configuración de Doxygen para Sistema IoT de Sensores
+
+# Información del Proyecto
+PROJECT_NAME           = "Sistema de Gestión Polimórfica de Sensores para IoT"
+PROJECT_NUMBER         = "v3.0"
+PROJECT_BRIEF          = "Sistema avanzado de gestión de sensores con POO, Templates y Arduino"
+
+# Directorios
+OUTPUT_DIRECTORY       = docs
+INPUT                  = codigo \
+                         codigo/SensorBase.h \
+                         codigo/SensorTemperatura.h \
+                         codigo/SensorPresion.h \
+                         codigo/ListaSensor.h \
+                         codigo/Nodo.h \
+                         codigo/SerialPort.h \
+                         codigo/main.cpp
+                         
+RECURSIVE              = NO
+FILE_PATTERNS          = *.cpp *.h *.hpp
+EXCLUDE_PATTERNS       = */build/* */.*
+
+# Opciones de Extracción
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Opciones de Generación
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+# Opciones de Visualización
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+
+# Gráficos y Diagramas
+HAVE_DOT               = NO
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK              = YES
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+
+# Opciones de salida
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_COLORSTYLE        = LIGHT
+
+# Idioma
+OUTPUT_LANGUAGE        = Spanish
+
+# Warnings
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+# Optimización
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+BUILTIN_STL_SUPPORT    = YES

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentación - Sistema IoT</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
+        code { background: #f8f9fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        .section { margin: 25px 0; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Documentación del Sistema IoT de Sensores</h1>
+        
+        <div class="note">
+            <strong>⚠️ Nota:</strong> Para generar la documentación completa con Doxygen, ejecuta:
+            <pre>doxygen Doxyfile</pre>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 Inicio Rápido</h2>
+            <p>Compilar y ejecutar el sistema:</p>
+            <pre>cd codigo
+g++ -std=c++11 -o SistemaIoT main.cpp
+./SistemaIoT</pre>
+        </div>
+        
+        <div class="section">
+            <h2>📋 Componentes del Sistema</h2>
+            <ul>
+                <li><strong>SensorBase.h</strong> - Clase base abstracta con métodos virtuales puros</li>
+                <li><strong>SensorTemperatura.h</strong> - Sensor que maneja valores float</li>
+                <li><strong>SensorPresion.h</strong> - Sensor que maneja valores int</li>
+                <li><strong>ListaSensor.h</strong> - Lista enlazada genérica con templates</li>
+                <li><strong>Nodo.h</strong> - Estructura de nodo genérico</li>
+                <li><strong>SerialPort.h</strong> - Comunicación con Arduino</li>
+                <li><strong>main.cpp</strong> - Programa principal</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Características Principales</h2>
+            <ul>
+                <li>✅ Polimorfismo con clases abstractas</li>
+                <li>✅ Templates para programación genérica</li>
+                <li>✅ Gestión manual de memoria (sin STL)</li>
+                <li>✅ Regla de los Tres/Cinco implementada</li>
+                <li>✅ Integración con Arduino real</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📖 Documentación Completa</h2>
+            <p>Este archivo es un placeholder. Para generar la documentación completa:</p>
+            <ol>
+                <li>Asegúrate de tener Doxygen instalado</li>
+                <li>Ejecuta: <code>doxygen Doxyfile</code></li>
+                <li>La documentación se generará en este directorio</li>
+                <li>Abre: <code>docs/html/index.html</code> nuevamente</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>🔗 Referencias</h2>
+            <ul>
+                <li>Ver el archivo <strong>REPORTE_TECNICO.md</strong> para documentación detallada</li>
+                <li>Revisar el código fuente en el directorio <strong>codigo/</strong></li>
+                <li>Consultar <strong>README.txt</strong> para instrucciones básicas</li>
+            </ul>
+        </div>
+        
+        <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; text-align: center;">
+            <p>Sistema de Gestión Polimórfica de Sensores para IoT - Versión 3.0</p>
+            <p>Octubre 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+PANTALLAZOS REQUERIDOS
+=======================
+
+Incluir los siguientes pantallazos en este directorio:
+
+1. compilacion.png
+   - Mostrar: g++ -std=c++11 -o SistemaIoT main.cpp
+   - Sin errores
+
+2. menu_principal.png
+   - Menú del sistema con las 6 opciones
+
+3. arduino_lectura.png
+   - Sistema leyendo datos del Arduino
+   - Mostrando tipo de dato (float/int)
+   - Sensores creándose automáticamente
+
+4. procesamiento.png
+   - Opción 4: Procesamiento polimórfico
+   - Mostrando cálculos para cada sensor
+
+5. liberacion_memoria.png
+   - Opción 5: Cerrar sistema
+   - Destructores ejecutándose
+   - Nodos siendo liberados
+
+6. documentacion_doxygen.png (OPCIONAL)
+   - Navegador mostrando docs/html/index.html
+   - Página principal de Doxygen
+
+FORMATO:
+- PNG o JPG
+- Buena resolución (legible)
+- Captura completa de la terminal/ventana

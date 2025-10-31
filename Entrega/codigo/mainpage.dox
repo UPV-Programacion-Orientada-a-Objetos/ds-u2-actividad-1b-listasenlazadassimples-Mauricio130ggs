@@ -1,0 +1,57 @@
+/**
+ * @mainpage Sistema de Gestión Polimórfica de Sensores para IoT
+ * 
+ * @section intro_sec Introducción
+ * 
+ * Este proyecto implementa un sistema de gestión de sensores que utiliza
+ * conceptos avanzados de Programación Orientada a Objetos en C++.
+ * 
+ * @section features_sec Características Principales
+ * 
+ * - **Polimorfismo**: Jerarquía de clases con clase base abstracta
+ * - **Templates**: Lista enlazada genérica independiente del tipo
+ * - **Gestión de Memoria**: Implementación de la Regla de los Tres/Cinco
+ * - **Sin STL**: Implementación manual de estructuras de datos
+ * - **Arduino Integration**: Lectura directa del puerto serial
+ * 
+ * @section structure_sec Estructura del Proyecto
+ * 
+ * El sistema está compuesto por los siguientes componentes principales:
+ * 
+ * @subsection base_class Clase Base
+ * - SensorBase: Clase abstracta que define la interfaz común
+ * 
+ * @subsection derived_classes Clases Derivadas
+ * - SensorTemperatura: Maneja lecturas de temperatura (float)
+ * - SensorPresion: Maneja lecturas de presión (int)
+ * 
+ * @subsection data_structures Estructuras de Datos
+ * - ListaSensor<T>: Lista enlazada simple genérica
+ * - Nodo<T>: Estructura de nodo genérico
+ * 
+ * @subsection communication Comunicación
+ * - SerialPort: Manejo del puerto serial para Arduino
+ * 
+ * @section usage_sec Uso del Sistema
+ * 
+ * @code
+ * // Compilar
+ * g++ -std=c++11 -o SistemaIoT main.cpp
+ * 
+ * // Ejecutar
+ * ./SistemaIoT
+ * @endcode
+ * 
+ * @section requirements_sec Requisitos
+ * 
+ * - Compilador: g++ con soporte C++11 o superior
+ * - Sistema Operativo: Linux o macOS (para comunicación serial)
+ * - Hardware (opcional): Arduino Uno/Nano/Mega
+ * 
+ * @section author_sec Autor
+ * 
+ * Sistema de Gestión IoT - Proyecto Académico
+ * 
+ * @date Octubre 2025
+ * @version 3.0
+ */
